@@ -82,8 +82,10 @@ class FractionTest {
 
     @Test
     public void testMultiplyFraction() {
-        // TODO (AQC8ZY)
-        fail();
+        assertFraction(25, 25, new Fraction(5, 5).multiply(new Fraction(5, 5)));
+        assertFraction(-3, 25, new Fraction(1, -5).multiply(new Fraction(3, 5)));
+        assertFraction(5, 15, new Fraction(-5, 5).multiply(new Fraction(-1, 3)));
+        assertFraction(6, 6, new Fraction(-2, -3).multiply(new Fraction(-3, -2)));
     }
 
     @Test
