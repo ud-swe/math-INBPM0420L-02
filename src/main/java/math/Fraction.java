@@ -244,8 +244,7 @@ public class Fraction extends Number implements Cloneable {
      * otherwise
      */
     public boolean isZero() {
-        // TODO (CIKFWV)
-        return false;
+        return this.numerator == 0;
     }
 
     /**
@@ -254,8 +253,8 @@ public class Fraction extends Number implements Cloneable {
      * @return the result of the reduction of this fraction
      */
     public Fraction reduce() {
-        // TODO (CIKFWV)
-        return null;
+        int gcd = GCD.gcd(this.numerator, this.denominator);
+        return new Fraction(this.numerator / gcd, this.denominator / gcd);
     }
 
     /**
