@@ -113,7 +113,18 @@ class FractionTest {
     @Test
     public void testToString() {
         // TODO (P8HR70)
-        fail();
+        assertEquals("0", new Fraction(0,3).toString());
+        assertEquals("0", new Fraction(0,-3).toString());
+
+        assertEquals("2", new Fraction(2,1).toString());
+        assertEquals("-2", new Fraction(-2,1).toString());
+        assertEquals("-2", new Fraction(2,-1).toString());
+        assertEquals("2", new Fraction(-2,-1).toString());
+
+        assertEquals("2/3", new Fraction(2,3).toString());
+        assertEquals("-2/3", new Fraction(-2,3).toString());
+        assertEquals("-2/3", new Fraction(2,-3).toString());
+        assertEquals("2/3", new Fraction(-2,-3).toString());
     }
 
     @Test

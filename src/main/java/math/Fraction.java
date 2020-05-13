@@ -307,7 +307,13 @@ public class Fraction extends Number implements Cloneable {
     @Override
     public String toString() {
         // TODO (P8HR70)
-        return null;
+        if(this.numerator == 0)
+            return "0";
+        else if(this.denominator == 1)
+            return Integer.toString(this.numerator);
+        else
+            return this.numerator + "/" + this.denominator;
+
     }
 
 }
