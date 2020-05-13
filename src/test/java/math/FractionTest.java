@@ -105,14 +105,15 @@ class FractionTest {
 
     @Test
     public void testIsZero() {
-        // TODO (CIKFWV)
-        fail();
+        assertEquals(false, new Fraction(3, 1).isZero());
+        assertEquals(true, new Fraction(0, 1).isZero());
     }
 
     @Test
     public void testReduce() {
-        // TODO (CIKFWV)
-        fail();
+        assertFraction(5, 2, new Fraction(10, 4).reduce());
+        assertFraction(1, 1, new Fraction(22, 22).reduce());
+        assertFraction(8, 3, new Fraction(8, 3).reduce());
     }
 
     @Test
