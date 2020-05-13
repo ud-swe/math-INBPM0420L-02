@@ -180,8 +180,7 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the result
      */
     public Fraction multiply(Fraction fraction) {
-        // TODO (AQC8ZY)
-        return null;
+        return new Fraction(this.numerator * fraction.numerator, this.denominator * fraction.denominator);
     }
 
     /**
